@@ -3,6 +3,7 @@ eegapp2
 This app is intended to act as a tool to assist in the exploratory analysis of the data from the predictive analytics challenge from the American Epilepsy Society Seizure found here https://www.kaggle.com/c/seizure-prediction.
 
 Steps to run the app:
+
 1) Download and open the associated files from this github page. 
 
 2) Install and load the shiny package with the following commands:
