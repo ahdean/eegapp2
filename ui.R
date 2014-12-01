@@ -1,6 +1,6 @@
 # ui.R
 shinyUI(fluidPage(
-  titlePanel("EEG Scans"),
+  titlePanel("EEGapp - an exploratory tool for EEG data"),
   
   sidebarLayout(
     sidebarPanel(
@@ -21,9 +21,11 @@ shinyUI(fluidPage(
       ),
     
     mainPanel(
-      p("10 minute periods of EEG voltage data readings sampled at 500hz for each patient"),
+      
+      textOutput("text1"),
+      textOutput("text2"),
       plotOutput("plot_inter")
-    
+      
     )
   )
 ))
