@@ -1,6 +1,6 @@
 # ui.R
 shinyUI(fluidPage(
-  titlePanel("EEGapp - an exploratory tool for EEG data"),
+  titlePanel("EEGapp - an exploratory tool for analysis of intracraniel spontaneous seizure data"),
   
   sidebarLayout(
     sidebarPanel(
