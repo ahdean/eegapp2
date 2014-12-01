@@ -1,4 +1,3 @@
-#giving the real eeg data a shot!
 # server.R
 
 shinyServer(function(input, output) {
@@ -20,8 +19,8 @@ shinyServer(function(input, output) {
                    "Inter_001" = "eegdata_inter001.csv",
                    "Preict_001" = "eegdata_preict001.csv",
                    "Test_001" = "eegdata_test001.csv")
-    data <- read.csv(paste("~/Documents/schoolwork/coursework - SEM1/PH251D-EpiR/eegapp/data/",filename, sep=""))
-    ##change this filepath to appropriate directory.
+    data <- read.csv(paste("~/Downloads/eegapp2-master/data/",filename, sep=""))
+    ##change this filepath to appropriate directory if needed.
     data.range <- data[x.percentile,]
     print(str(data.range))
     z <- seq(from = 1, to = nrow(data.range), by = input$n)
