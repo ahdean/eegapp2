@@ -16,4 +16,4 @@ library(shiny)
 
 runApp("~/Downloads/eegapp2-master")
 
-Note that the run command assumes that the app folder eegapp2-master is located in your downloads directory. If your folder is not located in downloads or has been moved the location will have to be updated to reflect these changes. Additionally, line 23 (reading in the data) from the server.R file will need to be updated as well to reflect these changes.
+Note that the run command assumes that the app folder eegapp2-master is located in your downloads directory. If your folder is not located in downloads or has been moved the location will have to be updated to reflect these changes. Additionally, line 21 (reading in the data) from the server.R file will need to be updated as well to reflect these changes.
