@@ -25,9 +25,9 @@ shinyServer(function(input, output) {
     data.range2 <- data.range[z,]
     print(filename)
     
-    i.plot<-ggplot(data = data.range2, aes(x = X, y = Dog_5_inter_001.V10)) + geom_line() + labs(title="10 minute segments of EEG voltage data from an epileptic patient", x = "1/500s i.e. 500Hz", y= "Voltage")
-    p.plot<-ggplot(data = data.range2, aes(x = X, y = Dog_5_preict_001.V10)) + geom_line() + labs(title="10 minute segments of EEG voltage data from an epileptic patient", x = "1/500s i.e. 500Hz", y= "Voltage")
-    t.plot<-ggplot(data = data.range2, aes(x = X, y = Dog_5_test_001.V10)) + geom_line() + labs(title="10 minute segments of EEG voltage data from an epileptic patient", x = "1/500s i.e. 500Hz", y= "Voltage")
+    i.plot<-ggplot(data = data.range2, aes(x = X, y = Dog_5_inter_001.V10)) + geom_line() + labs(title="10 minute EEG from an epileptic patient", x = "500Hz", y= "Voltage")
+    p.plot<-ggplot(data = data.range2, aes(x = X, y = Dog_5_preict_001.V10)) + geom_line() + labs(title="10 minute EEG from an epileptic patient", x = "500Hz", y= "Voltage")
+    t.plot<-ggplot(data = data.range2, aes(x = X, y = Dog_5_test_001.V10)) + geom_line() + labs(title="10 minute EEG from an epileptic patient", x = "500Hz", y= "Voltage")
     
     if (filename == "eegdata_inter001.csv") {i.plot} 
     else if (filename == "eegdata_preict001.csv") {p.plot}
