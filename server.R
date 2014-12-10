@@ -1,6 +1,6 @@
 # server.R
 shinyServer(function(input, output) {
-  
+  path = "~/Downloads/eegapp2-master/data/"
   output$text1 <- renderText({  
     paste("You have chosen a range from", input$range[1], "to", input$range[2])
   })
@@ -18,7 +18,7 @@ shinyServer(function(input, output) {
                    "Inter_001" = "eegdata_inter001.csv",
                    "Preict_001" = "eegdata_preict001.csv",
                    "Test_001" = "eegdata_test001.csv")
-    data <- read.csv(paste("~/Downloads/eegapp2-master/data/",filename, sep=""))
+    data <- read.csv(paste(path, filename, sep=""))
     data.range <- data[x.percentile,]
     print(str(data.range))
     z <- seq(from = 1, to = nrow(data.range), by = input$n)
